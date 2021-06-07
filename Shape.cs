@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
-	class Shape
+	internal class Shape : IDrawable
 	{
 		public List<Point> dotes = new List<Point>();
 
@@ -62,6 +62,7 @@ namespace WindowsFormsApp1
 		{
 
 		}
+		
 
 
 		public virtual double FindDistanceBetweenTwoPoints(Point point1, Point point2)
